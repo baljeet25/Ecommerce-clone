@@ -5,7 +5,7 @@ import Cards from "../Cards/Cards";
 
 const Category= () => {
   const { categoryName } = useParams();
-  const [categoryData, setCategoryData] = useState(null);
+  const [categoryData, setCategoryData] = useState();
 
   useEffect(() => {
     fetch(`https://dummyjson.com/products/category/${categoryName}`)
